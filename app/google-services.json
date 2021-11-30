@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "85869577204",
+    "firebase_url": "https://rssfeeder-c9176-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "rssfeeder-c9176",
+    "storage_bucket": "rssfeeder-c9176.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:85869577204:android:45efefce7463d0ba3f2fa1",
+        "android_client_info": {
+          "package_name": "com.example.rssfeeder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "85869577204-3k894rq0qi3hq134mjqg6bno4sa0v9vd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuIk5f3DpBvrSwE1zuIlQlFHYmhX62dgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "85869577204-3k894rq0qi3hq134mjqg6bno4sa0v9vd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

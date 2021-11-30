@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RSSActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER RSS FEED URL"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/rssFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="https://www.independent.ie/breaking-news/rss/"
+        android:text="https://www.independent.ie/breaking-news/rss/"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER AMOUNT OF ITEMS"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/recentItemAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="4"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/subscribeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subscribeToFeed"
+        android:text="Subscribe" />
+
+</LinearLayout>
