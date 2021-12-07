@@ -17,7 +17,7 @@
         android:id="@+id/rssFeed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="https://www.independent.ie/breaking-news/rss/"
+        android:hint="https://www.rte.ie/news/rss/news-headlines.xml"
         android:text="https://www.independent.ie/breaking-news/rss/"
         android:layout_gravity="center" />
     <TextView
@@ -31,6 +31,8 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="4"
+        android:text="8"
+
         android:layout_gravity="center" />
 
     <Button

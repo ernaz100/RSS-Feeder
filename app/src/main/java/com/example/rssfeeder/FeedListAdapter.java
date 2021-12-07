@@ -25,20 +25,29 @@ public class FeedListAdapter<E> extends ArrayAdapter<Entry> {
         this.context = context;
         this.values = values;
     }
-
+    // Custom List Layout
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context
-                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.mylistlayout, parent, false);
 
         TextView titleView = (TextView) rowView.findViewById(R.id.title);
         TextView descriptionView = (TextView) rowView.findViewById(R.id.description);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.label);
-
+        // if image downloading worked convert the compressed image back to a Bitmap and display it else show dummy
+        Bitmap bmp = null;
+        if(values.get(position).imageByteArray != null) {
+            bmp = BitmapFactory.decodeByteArray(values.get(position).imageByteArray, 0, values.get(position).imageByteArray.length);
+        }
+        if(bmp != null){
+            imageView.setImageBitmap(bmp);
+        }
+        else{
+            imageView.setImageResource(R.drawable.common_google_signin_btn_icon_dark);
+        }
+        // set title and description per list item
         titleView.setText(values.get(position).title);
         descriptionView.setText(values.get(position).summary);
-        imageView.setImageResource(R.drawable.common_google_signin_btn_icon_dark);
         return rowView;
     }
 }

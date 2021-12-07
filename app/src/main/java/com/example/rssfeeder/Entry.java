@@ -9,12 +9,14 @@ public class Entry implements Serializable {
     public final String title;
     public final String summary;
     public final String link;
-    public final String imageURL;
+    public final byte[] imageByteArray;
+    public final String pubDate;
 
-    Entry(String title, String summary, String link, String imageURL) {
+    Entry(String title, String summary, String link, byte[] imageByteArray,String pubDate) {
         this.title = title;
         this.summary = summary;
         this.link = link;
-        this.imageURL = imageURL;
+        this.imageByteArray = imageByteArray;
+        this.pubDate = pubDate;
     }
 }

@@ -22,6 +22,11 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+
+    // Boilerplate Firebase Authentication code
+    // If User is already authenticated or a valid username + password was entered in login
+    // It sends the user via intent to the RSS Subscription Activity
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
